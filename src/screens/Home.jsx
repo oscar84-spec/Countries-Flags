@@ -23,7 +23,7 @@ const Home = () => {
 
   useEffect(() => {
     const getCountryData = async () => {
-      const response = await fetch("./src/data.json");
+      const response = await fetch("/data.json");
       const data = await response.json();
       setCountry(data);
       setFilteredCountry(data);
